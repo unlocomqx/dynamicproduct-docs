@@ -57,6 +57,14 @@ You can add dropdown options in the field settings
 In most cases, the values and secondary values of the options are arbitrary.  
 The field value will be the value of the selected option, so you can use the field directly in the formulas.
 
+You can also assign a color or an image to each option if needed
+
+<img srcset="./images/fields/dropdown-images-config.jpg 2x" class="border">
+
+The module will then display the corresponding image or color when an image is selected
+
+<img srcset="./images/fields/dropdown-image.jpg 2x" class="padding border">
+
 ###### Radio buttons
 
 Display radio buttons
