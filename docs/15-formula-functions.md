@@ -2,7 +2,7 @@
 
 The module supports many Excel functions that you can use in your calculations
 
-List of functions:
+### Standard functions
 
 **SQR**: Return the square of a number 
 ```xls
@@ -90,14 +90,37 @@ STRLEN('World') → 5
 CHECK("Hello") → 1
 CHECK("") → 0
 ```
-**SUBSTR**:   
-**REPLACE**:   
-**CONCAT**:   
-**TRIM**:   
-**RTRIM**:   
-**LTRIM**:   
-**CHR**:   
-**NUM**:   
-**SUM**:   
+**SUBSTR**: Extract a string from another string
+```xls
+SUBSTR(string, start, length)
+SUBSTR("Hello world!", 0, 6) → "Hello"
+```
+**REPLACE**: Find and replace a string in another string
+```xls
+REPLACE(string, find, replace)
+REPLACE("It's a good day", "good", "great") → "It's a great day"
+```
+**CONCAT**: Joins multiple strings together, accepts two strings or more
+```xls
+CONCAT("A great ", "day") → "A great day"
+CONCAT( "A great ", "day ", "today" ) → "A great day today"
+```
 
-**GRID**:   
+---
+### The Grid function
+
+**Grid**: Allows reading a CSV file and getting a result based on two values  
+This function is very similar to [the Grid feature](product-config/13-grids.md).
+
+Here's a [CSV sample](/files/sample.csv ':ignore')
+
+To use this function, start by uploading your CSV file to the folder `[root of PrestaShop]/dynamicproduct/databases/`  
+Then in the formula, you can insert this function by clicking the CSV file
+
+1. Click the "**Show more**" button
+2. Click the CSCV file to insert the Grid function into the formula
+3. Insert the two other fields that will act as the input to the grid
+
+In this case, we get a price based on the width and height values
+
+<img srcset="./images/grid-function.jpg 2x">
