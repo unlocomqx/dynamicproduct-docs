@@ -24,6 +24,8 @@ Many Excel functions can be used
 If statement for conditional calculation
 <code class="formula">IF(**[width]** > 100, 10, 12)</code>
 
+?> The keyboard shortct to save a formula is **Ctrl** + **Enter**
+
 ### Price formula
 This formula is used to calculate the cost of the customization.  
 
