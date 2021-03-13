@@ -45,7 +45,28 @@ The slider settings show these options
 <img srcset="./images/fields/slider-settings.jpg 2x" class="border">
 
 ###### Dropdown
+
+Displays a dropdown list (a HTML select)
+
+<img srcset="./images/fields/dropdown.jpg 2x" class="padding border">
+
+You can add dropdown options in the field settings
+
+<img srcset="./images/fields/dropdown-settings.jpg 2x" class="border">
+
+In most cases, the values and secondary values of the options are arbitrary.  
+The field value will be the value of the selected option, so you can use the field directly in the formulas.
+
 ###### Radio buttons
+
+Display radio buttons
+
+<img srcset="./images/fields/radio.jpg 2x" class="padding border">
+
+You can add radio option in the field settings
+
+<img srcset="./images/fields/radio-settings.jpg 2x" class="border">
+
 ###### Image list
 ###### Checkbox
 ###### Text
