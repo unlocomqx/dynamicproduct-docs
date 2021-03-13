@@ -8,6 +8,7 @@ Start by adding a new field then you can change its properties directly in the l
 
 <img srcset="./images/field-example.jpg 2x" class="padding border">
 
+---
 ### Name
 The field name is only used in the backoffice and it's used to reference the field in the formulas.  
 This name should be lower case and should only contain alphanumerical characters in addition to the underscore.  
@@ -18,9 +19,11 @@ Here are some examples:
 - option1
 - option2
 
+---
 ### Label
 This label will be displayed to the customers, it can be translated to all available languages
 
+---
 ### Type
 The module supports many field types, here's the full list 
 
@@ -278,3 +281,31 @@ Here's an example of an error message
 You can control the visibility of this field using the conditions feature.
 
 When an _Error message_ field is displayed, the module will not allow adding to cart and will scroll to the first error that is displayed
+
+---
+### Value
+
+This is the default and initial value of the field
+
+---
+### Unit
+
+This is the field unit, it will displayed in the product page like this
+
+<img srcset="./images/fields/unit.jpg 2x" class="padding border">
+
+You can configure the unitd in the main configuration page of the module.
+
+---
+### Options
+Using this button, you can access the module settings
+
+### Image
+You can assign an image to any field of your choice  
+Click the icon to upload an image.
+
+<img srcset="./images/fields/image-icon.jpg 2x" class="border">
+
+The image will be displayed in the field tooltip like this
+
+<img srcset="./images/fields/tooltip-image.jpg 2x" class="border">
