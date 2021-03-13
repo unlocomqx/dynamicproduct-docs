@@ -13,4 +13,13 @@ The module will then replace the field references with their corresponding value
 
 Adding a field to the formula is easy, you just need to click the field button to insert it.
 
-<code class="formula lang-text"><b>[width]</b> * <b>[height]</b> * 50</code>
+Here are some formula example to get an idea about the syntax
+<code class="formula lang-text">**[width]** * **[height]** / 10000 * 50</code>
+
+<code class="formula lang-text">(**[width]** + **[height]**) * 2</code>
+
+Many Excel functions can be used
+<code class="formula lang-text">POW(**[width]**, 2)</code>
+
+If statement for conditional calculation
+<code class="formula lang-text">IF(**[width]** > 100, 10, 12)</code>
