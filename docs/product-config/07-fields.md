@@ -256,5 +256,15 @@ You can configure the initial color and the description in the field settings.
 ---
 ##### HTML
 
+Allows you to display any html content
+
+<img srcset="./images/fields/html.jpg 2x" class="padding border">
+
+You can configure the content in the field settings
+
+<img srcset="./images/fields/html-settings.jpg 2x" class="padding border">
+
+!> For security purposes, only paste html from trusted sources
+
 ---
 ##### Error message
