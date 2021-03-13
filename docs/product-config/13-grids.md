@@ -18,7 +18,7 @@ The last interval will be picked when the corresponding field value is equal or 
 
 ### CSV Import
 
-You can import a grid from a CSV file, here you can find [a sample file](files/sample.csv)
+You can import a grid from a CSV file, here you can find [a sample file](/files/sample.csv ':ignore')
 
 Here's a preview of the file
 
