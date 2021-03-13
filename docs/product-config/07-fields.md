@@ -268,3 +268,13 @@ You can configure the content in the field settings
 
 ---
 ##### Error message
+
+This field allows you to implement a custom validation logic for your fields
+
+Here's an example of an error message
+
+<img srcset="./images/fields/error.jpg 2x" class="padding border">
+
+You can control the visibility of this field using the conditions feature.
+
+When an _Error message_ field is displayed, the module will not allow adding to cart and will scroll to the first error that is displayed
