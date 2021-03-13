@@ -46,7 +46,7 @@ In out case, we can reconfigure the **material** field and set a string value fo
 <img srcset="./images/condition-strings.jpg 2x" class="border">
 
 Then when we configure our condition formula, we can click the option to insert its value directly
-<img srcset="./images/dropdown-formula-strings.jpg 2x" class="padding border">
+<img srcset="./images/dropdown-formula-strings.jpg 2x" class="border">
 
 Note how the quotes are used around both the field name and the string itself,
 this is to avoid syntax errors and to ensure correct parsing of the formula. 
