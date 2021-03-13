@@ -1,3 +1,5 @@
+# Settings
+
 In this tab, you can find the general product settings.  
 <img srcset="./images/module-interface.jpg 2x" class="border">
 
