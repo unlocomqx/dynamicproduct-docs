@@ -1,2 +1,2 @@
-* [Intro](/)
-* [Guide](guide.md)
+* [Introduction](/)
+* [Installation](installation.md)
