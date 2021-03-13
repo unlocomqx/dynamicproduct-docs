@@ -245,5 +245,16 @@ Display a line separating fields
 ---
 ##### Color picker
 
+Displays a color picker field
+
+<img srcset="./images/fields/picker.jpg 2x" class="padding border">
+
+You can configure the initial color and the description in the field settings.
+
+<img srcset="./images/fields/picker-settings.jpg 2x" class="padding border">
+
+---
+##### HTML
+
 ---
 ##### Error message
