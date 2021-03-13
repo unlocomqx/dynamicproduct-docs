@@ -5,3 +5,12 @@
 .padding {
   padding: 10px;
 }
+
+code.formula {
+  color: unset;
+  padding: 10px;
+}
+
+code.formula b {
+  color: #00aff0;
+}
