@@ -16,7 +16,7 @@
         homepage: "01-intro.md",
         logo: "/images/logo-57.png",
         name: "<span>Dynamic Product Docs</span>",
-        search: 'auto',
+        search: "auto",
         repo: null,
         coverpage: true,
         loadSidebar: true,
@@ -25,12 +25,16 @@
         auto2top: true,
         alias: {
           "/.*/_sidebar.md": "/_sidebar.md"
-        }
+        },
+        copyCode: {
+          buttonText: "Copy",
+        },
       };
     </script>
     <!-- Docsify v4 -->
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-
+    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
   </body>
 </html>
