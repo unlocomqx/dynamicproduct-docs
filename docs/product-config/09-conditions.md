@@ -37,3 +37,16 @@ To hide a field options, click the cog icon to open the options list.
 Then you can hide the options of your choice by clicking them
 
 <img srcset="./images/condition-options.jpg 2x" class="border">
+
+### Working with fields having options
+When working with field which have options, you will need to reference the option value in the condition formula.
+Referencing with numeric values can hinder readability, this is why you can use strings instead.
+
+In out case, we can reconfigure the **material** field and set a string value for each option.
+<img srcset="./images/condition-strings.jpg 2x" class="border">
+
+Then when we configure our condition formula, we can click the option to insert its value directly
+<img srcset="./images/dropdown-formula-strings.jpg 2x" class="padding border">
+
+Note how the quotes are used around both the field name and the string itself,
+this is to avoid syntax errors and to ensure correct parsing of the formula. 
