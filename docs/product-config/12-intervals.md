@@ -12,6 +12,7 @@ This symbol ∞ signifies infinity which means, when area is 7 or greater.
 
 To add intervals, click the plus sign in the top right corner, the module will add a new interval automatically.  
 To edit it, click it, then this popup will be displayed
+
 <img srcset="./images/intervals-popup.jpg 2x" class="border">
 
 ?> You can set the **Max** value to infinity by clicking the infinity button on the right side of the input. 
@@ -25,6 +26,7 @@ you can add other conditions by clicking the add button that is inside the inter
 
 ### Target fields
 You can also target multiple fields
+
 <img srcset="./images/interval-target.jpg 2x" class="padding border">
 
 ?> You can also have multiple intervals in one product
@@ -36,9 +38,11 @@ As example, let's say we have 3 colors with value 1, 2 and 3 and we want the pri
 when the 3rd color is selected
 
 Here's how to do it
+
 <img srcset="./images/interval-values.jpg 2x" class="padding border">
 
 This is how to configure the condition using **Values**
+
 <img srcset="./images/interval-values-popup.jpg 2x" class="border">
 
 ?> The **Values** must be separated by commas and without spaces
