@@ -165,23 +165,82 @@ Examples:
 ---
 ##### Image
 
+Displays an image upload field
+
+<img srcset="./images/fields/image.jpg 2x" class="padding border">
+
+You can configure this field in the settings
+
+<img srcset="./images/fields/image-settings.jpg 2x" class="border">
+
+You can configure the minimum required size in pixels and the maximum file size in MB
+
+When the user uploads an image, a preview will be displayed like this
+
+<img srcset="./images/fields/image-preview.jpg 2x" class="padding border">
+
 ---
 ##### File
+
+Displays a file upload field
+
+<img srcset="./images/fields/file.jpg 2x" class="padding border">
+
+You can configure the field like this
+
+<img srcset="./images/fields/file-settings.jpg 2x" class="border">
+
+The allowed extensions value if comma seprated without spaces.  
+Example:  
+````text
+svg,png,zip
+````
 
 ---
 ##### Fixed Value
 
+This field can be used if you'd like to declare a fixed value that is not supposed to change.  
+
+<img srcset="./images/fields/fixed.jpg 2x" class="padding border">
+
+For example, if you'd like to store a convertion ratio between two units.  
+This field can be displayed to customers but it's not necessary in most cases.
+
 ---
 ##### Price
+
+You can use this field to store a price.  
+When this field is displayed to the customer, its value will be formatted using the current currency.
+
+<img srcset="./images/fields/price.jpg 2x" class="padding border">
 
 ---
 ##### Dynamic Variable
 
+You can use this field for any variable that is going to change either using the intervals or the grid or any other method.  
+In most case, you will not need to display this field to customers, so you can hide it.
+
+If you choose to display it, then it will be displayed like this  
+
+<img srcset="./images/fields/dynamic.jpg 2x" class="padding border">
+
 ---
 ##### Feature
 
+This field can display any value, it's similar to product features displayed by PrestaShop
+
+<img srcset="./images/fields/feature.jpg 2x" class="padding border">
+
+You can enter the feature value in the field settings. This value can be translated to all available languages.
+
+<img srcset="./images/fields/feature-settings.jpg 2x" class="border">
+
 ---
 ##### Divider
+
+Display a line separating fields
+
+<img srcset="./images/fields/divider.jpg 2x" class="padding border">
 
 ---
 ##### Color picker
