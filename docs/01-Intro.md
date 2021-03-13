@@ -8,3 +8,5 @@ The module can display many types of fields like numeric fields, dropdown, check
 It updates the product cost directly as the customer picks the options, this cost is then reflected in the cart listing.
 
 As a merchant, you get all the custom information in the backoffice Orders page.
+
+![](./images/dynamic-product-addons.jpg)
