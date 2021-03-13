@@ -28,3 +28,18 @@ You can also target multiple fields
 <img srcset="./images/interval-target.jpg 2x" class="padding border">
 
 ?> You can also have multiple intervals in one product
+
+### Values
+In the interval condition, you can pick the type **Interval** as well as the type **Values**.
+The type **Values** allows you to use discrete values in your conditions.  
+As example, let's say we have 3 colors with value 1, 2 and 3 and we want the price to be 20% more expensive
+when the 3rd color is selected
+
+Here's how to do it
+<img srcset="./images/interval-values.jpg 2x" class="padding border">
+
+This is how to configure the condition using **Values**
+<img srcset="./images/interval-values-popup.jpg 2x" class="border">
+
+?> The **Values** must be separated by commas and without spaces
+
