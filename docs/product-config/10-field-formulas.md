@@ -25,7 +25,7 @@ For example, let's say we have a price that we want to reduce when the area exce
 
 The first step is to create the price field, let's call it **price_m2** and give it a default value of 50.
 
-<img srcset="./images/price_m2.jpg 2x" class="border">
+<img srcset="./images/field-formulas-price_m2.jpg 2x" class="border">
 
 Now in the field formula, we can change its value using an **IF** statement like this
 
