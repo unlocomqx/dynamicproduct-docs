@@ -70,3 +70,19 @@ You can copy the current product configuration to any category of your choice.
 You can also import / export the configuration as a file or copy / paste it from clipboard
 
 <img srcset="./images/import-export.jpg 2x" class="border padding">
+
+#### Advanced configuration
+In the advanced configuration, you can change the calculation order if needed.  
+This is the default calculation order that the module follows:
+1. Intervals
+2. Field formulas
+3. Grids
+4. Conditions
+
+In the following example, a custom execution order is configured where the field formulas are calculated after the grids  
+
+<img srcset="./images/exec-order.jpg 2x" class="padding border">
+
+This is useful when you have a field that is modified by a grid and that you want to use it in a field formula.
+
+?> You can add a calculation step more than once if needed
