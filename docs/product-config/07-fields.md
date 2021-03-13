@@ -317,3 +317,9 @@ You can hide the field by clicking on the visibility icon
 <img srcset="./images/fields/actions.jpg 2x" class="border">
 
 You can also delete the field or duplicate it
+
+### Reordering the field
+
+Using the sort handle, you can reorder the fields by dragging the desired field and re-positioning it.
+
+<img srcset="./images/fields/drag.jpg 2x" class="border">
