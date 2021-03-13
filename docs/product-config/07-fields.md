@@ -309,3 +309,11 @@ Click the icon to upload an image.
 The image will be displayed in the field tooltip like this
 
 <img srcset="./images/fields/tooltip-image.jpg 2x" class="border">
+
+### Actions
+
+You can hide the field by clicking on the visibility icon
+
+<img srcset="./images/fields/actions.jpg 2x" class="border">
+
+You can also delete the field or duplicate it
