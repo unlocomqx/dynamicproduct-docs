@@ -101,13 +101,13 @@ If you'd like to retract by meter squared for example
   CHECK([file]) // will return 1 if there is an image, 0 otherwise
   ```
 - **Fixed Value**  
-  The value is the initial value
+  The value is the current field value, that can be either the initial value of the value that was updated using PHP or using a field formula
   <code class="formula">**[fixed]**</code>
 - **Price**  
-  The value is the initial value
+  The value is the current field value, that can be either the initial value of the value that was updated using PHP or using a field formula
   <code class="formula">**[unit_price]**</code>
 - **Dynamic Variable**  
-  The value is the initial value
+  The value is the current field value, that can be either the initial value of the value that was updated using PHP or using a field formula
   <code class="formula">**[dynamic]**</code>
 - **Feature**  
   The value is the feature value for the current language
