@@ -43,7 +43,7 @@ Code example:
 
 updateField(field_name, props);
 
-// This example will change the value of the width field as well as the min, max and step
+// This example will change the value of the width field as well as the min, max and step properties
 updateField("width", {
   value: 50,
   min: 10,
