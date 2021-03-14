@@ -65,13 +65,19 @@ If you'd like to retract by meter squared for example
   <code class="formula">**[slider]**</code>
 - **Dropdown**  
   The value is the selected option value
-  <code class="formula">**[slider]**</code>
+  <code class="formula">**[dropdown]**</code>  
+  To access the secondary value
+  <code class="formula">**[[dropdown]]**</code>
 - **Radio buttons**  
   The value is the selected option value
   <code class="formula">**[radio]**</code>
+  To access the secondary value
+  <code class="formula">**[[radio]]**</code>
 - **Image list**  
   The value is the selected option value
   <code class="formula">**[list]**</code>
+  To access the secondary value
+  <code class="formula">**[[list]]**</code>
 - **Checkbox**  
   The value is 1 if checked, 0 otherwise
   <code class="formula">**[checkbox]**</code>
@@ -113,3 +119,13 @@ If you'd like to retract by meter squared for example
   <code class="formula">**[picker]**</code>
 - **Error message**  
   Can only be used in [conditions](product-config/09-conditions.md)
+
+### Secondary values
+For the fields of type **Dropdown**, **Radio buttons** and **Image list**, you can assign a secondary value to each option.  
+The way you use this secondary value in the formula is by using double brackets  
+Example
+<code class="formula">**[[dropdown]]**</code>
+
+You can easily insert this expression by long pressing the field name
+
+<img srcset="./images/secondary-value.jpg 2x">
