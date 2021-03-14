@@ -11,7 +11,7 @@ Here are the available methods to use a PHP file:
 - To calculate the [weight formula](product-config/08-formulas.md?id=weight-formula)
 - To calculate the [quantity formula](product-config/08-formulas.md?id=quantity-formula)
 - To assign the value of a [dynamic field](product-config/07-fields.md?id=dynamic-variable) from PHP
-- To [declare JavaScript variables](16-php-calculation.md?id=declaring-javascript-variables-from-php) to use it in a custom script
+- To [declare JavaScript variables](16-php-calculation.md?id=declaring-javascript-variables-from-php) to use it in a [custom script](17-custom-scripts.md)
 
 ### Accessing fields from PHP
 In any PHP file that you create inside the folder `/dynamicproduct`, the fields will be available
