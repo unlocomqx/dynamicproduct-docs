@@ -295,3 +295,24 @@ dpSaveCustomization(true).then(function(response){
   // response is either true or false based on the success of the operation
 });
 ```
+
+### Changing the module position in the page
+You can change the module position by changing the `dp_hook` variable and set it to any selector or html element.  
+The module will then be positioned after the selected hook.  
+Examples:
+```js
+window.dp_hook = "#my_location"; // A jQuery selector
+window.dp_hook = $("#my_location"); // A jQuery element
+window.dp_hook = document.getElementById("my_location"); // A DOM element
+```
+
+### Setting the price element
+Sometimes, the module can't find the price element to update it 
+because the theme has a different html structure than the default theme,
+for that, you can set the variable `dp_price_hook` to tell the module which element
+to update when updating the price.
+
+Code example
+```js
+window.dp_price_hook = ".product-prices span.price";
+```
