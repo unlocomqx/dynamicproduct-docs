@@ -30,7 +30,7 @@ Additionally, the module provides a variable named `$changed`
 which indicates the name of the field that was changed by the customer.  
 This can be useful if you want to only update the field that wasn't changed when two fields depend on each other.
 
-### Accessign PrestaShop functions
+### Accessing PrestaShop functions
 In the calculation file, you can access any PrestaShop function as well, here are some examples:
 ```php
 // fetch a file from a remote service
@@ -72,8 +72,47 @@ To calculate the price, place a PHP file in the folder `/dynamicproduct/calculat
   The product **ID** is displayed in the product list in the backoffice  
   <img srcset="./images/php-ids.jpg 2x" class="padding border">
 
-In the price calculation, you need to assign a `$result` variable at the end of the calculation
+In the price calculation, you need to assign a `$result` variable at the end of the calculation.
+
+?> Initially, the `$result` variable will contain the price formula result
 
 ```php
 $result = $width * $length / 10000 * 50;
 ```
+
+Examples:
+
+- Apply a discount when width is bigger than 100
+  ````php
+  if ($width > 100) {
+      // We don't assign a new value in this case, we simply reduce the price formula result 
+      $result = $result * 0.8;
+  }
+  ````
+- Get a unit price from a remote service
+```php
+$unit_price = (float)Tools::file_get_contents('https://remoteservice.com/pricing.php');
+$result = $length * $unit_price; 
+```
+
+### Weight calculation using PHP
+The weight calculation is done exactly in the same way as [the price calculation](16-php-calculation.md?id=price-calculation-using-php), except for one difference.  
+The variable that has to be assigned is called `$weight`.  
+Here are some examples:  
+```php
+// Calculate the weight based on the volume
+$weight = $width * $length * $depth * 5;
+```
+
+?> Initially, the `$weight` variable will contain the weight formula result
+
+### Quantity calculation using PHP
+The quantity calculation is also very similar to [the price calculation](16-php-calculation.md?id=price-calculation-using-php).  
+The only difference is that the variable that you need to assign is called `$qty`.  
+Here are some examples:
+```php
+// Retract from the stock by meter squared instead of units
+$qty = $width * $length;
+```
+
+?> Initially, the `$qty` variable will contain the quantity formula result
