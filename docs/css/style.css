@@ -17,7 +17,7 @@ code.formula strong {
 }
 
 :root {
-  --sidebar-width: 25rem;
+  --sidebar-width: 22rem;
   --code-inline-background: #f8f8f8;
   --code-inline-color: #e96900;
 }
