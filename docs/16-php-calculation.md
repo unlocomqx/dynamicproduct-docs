@@ -26,6 +26,42 @@ $length = 15;
 $text = 'Hello';
 ```
 
+Additionally, the module provides a variable named `$changed`
+which indicates the name of the field that was changed by the customer.  
+This can be useful if you want to only update the field that wasn't changed when two fields depend on each other.
+
+### Accessign PrestaShop functions
+In the calculation file, you can access any PrestaShop function as well, here are some examples:
+```php
+// fetch a file from a remote service
+$content = Tools::file_get_contents('http://google.com');
+
+// get the group of the current customer
+$id_group = Context::getContext()->customer->id_default_group;
+
+// get the category id of the current product
+$id_category = (new Product($id_product))->id_category_default;
+```
+
+### Other available variables
+In addition to the fields, the module provides other variables in the PHP context:
+```php
+// The ID of the current product
+$id_product
+
+// The selected combination ID
+$id_attribute
+
+// The current selected quantity
+$quantity
+
+// The product base price
+$product_price
+
+// The product base weight
+$product_weight
+```
+
 ### Price calculation using PHP
 To calculate the price, place a PHP file in the folder `/dynamicproduct/calculator`
 - Name the file `products.php` if you want to target all products
@@ -35,3 +71,9 @@ To calculate the price, place a PHP file in the folder `/dynamicproduct/calculat
     `product42.php` will target product `#42`  
   The product **ID** is displayed in the product list in the backoffice  
   <img srcset="./images/php-ids.jpg 2x" class="padding border">
+
+In the price calculation, you need to assign a `$result` variable at the end of the calculation
+
+```php
+$result = $width * $length / 10000 * 50;
+```
