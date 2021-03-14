@@ -11,7 +11,7 @@ Here are the available methods to use a PHP file:
 - To calculate the [weight formula](product-config/08-formulas.md?id=weight-formula)
 - To calculate the [quantity formula](product-config/08-formulas.md?id=quantity-formula)
 - To assign the value of a [dynamic field](product-config/07-fields.md?id=dynamic-variable) from PHP
-- To declare JavaScript variable to use it in a custom script
+- To [declare JavaScript variables](16-php-calculation.md?id=declaring-javascript-variables-from-php) to use it in a custom script
 
 ### Accessing fields from PHP
 In any PHP file that you create inside the folder `/dynamicproduct`, the fields will be available
@@ -144,3 +144,26 @@ $qty = $width * $length;
 ```
 
 ?> Initially, the `$qty` variable will contain the quantity formula result
+
+### Declaring JavaScript variables from PHP
+The module allows you to declare JavaScript variables that you can use in your custom scripts.  
+First, create a php file in the folder `/dynamicproduct/declarations`
+- Name the file `products.php` if you want to target all products
+- Name the file `productX.php` if you want to target only the product with ID=**X**
+
+The variables that you need to assign is called `$declarations`, it's a PHP array.
+
+Here's a code example
+
+```php
+$declarations = array(
+    'id_category' => (new Product($id_product))->id_category_default,
+    'id_group' => Context::getContext()->customer->id_default_group,
+);
+```
+
+These variables can be then accessed from JavaScript like this
+```js
+window.id_category
+window.id_group
+```
