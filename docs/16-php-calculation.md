@@ -14,7 +14,7 @@ Here are the available methods to use a PHP file:
 - To declare JavaScript variable to use it in a custom script
 
 ### Accessing fields from PHP
-In any PHP file that you create inside the folder `/dynamicproduct/`, the fields will be available
+In any PHP file that you create inside the folder `/dynamicproduct`, the fields will be available
 with their current values.
 For example, if you have fields `width`, `length` and `height`, you can access them using the variables
 `$width`, `$length` and `$height` respectively.  
@@ -62,10 +62,35 @@ $product_price
 $product_weight
 ```
 
+### Assigning a value to a field (Field Allocation)
+You can assign a value to field dynamically using PHP.  
+First, create a php file in the folder `/dynamicproduct/allocations`
+- Name the file `products.php` if you want to target all products
+- Name the file `productX.php` if you want to target only the product with ID=**X**
+
+You can [access fields by name](16-php-calculation.md?id=accessing-fields-from-php) and you can also assign a value to fields by name, here are some examples:
+- Assign a value to an area field (this can be done using [Field formulas](product-config/10-field-formulas.md) but it's here only as an example)
+```php
+// Assuming you have fields named area, width and length
+$area = $width * $length;
+```
+- Assign a PrestaShop variable or state to a field
+```php
+// Assuming you have a field named logged_in
+$logged_in = (int)Context::getContext()->customer->isLogged();
+// This will return 1 or 0
+// It can be used to show/hide fields using the condition feature for example
+```
+
+?> Don't forget to create a [dynamic variable](07-fields.md?id=dynamic-variable) field before assigning its value
+
+Once you assign a value to a field, you can use it in the price formula 
+and all other formulas and functions such as the intervals, the conditions and the grids etc... 
+
 ### Price calculation using PHP
 To calculate the price, place a PHP file in the folder `/dynamicproduct/calculator`
 - Name the file `products.php` if you want to target all products
-- Name the file `productX.php` if you want to target only the product with ID=X  
+- Name the file `productX.php` if you want to target only the product with ID=**X**  
   For example:  
     `product1.php` will target product `#1`  
     `product42.php` will target product `#42`  
@@ -96,9 +121,11 @@ $result = $length * $unit_price;
 ```
 
 ### Weight calculation using PHP
-The weight calculation is done exactly in the same way as [the price calculation](16-php-calculation.md?id=price-calculation-using-php), except for one difference.  
-The variable that has to be assigned is called `$weight`.  
-Here are some examples:  
+The weight calculation is done exactly in the same way as [the price calculation](16-php-calculation.md?id=price-calculation-using-php), except for two differences.  
+- The variable that has to be assigned is called `$weight`  
+- The file names are `weights.php` and `weightX.php` to target a product with ID=**X**  
+
+Here's an example 
 ```php
 // Calculate the weight based on the volume
 $weight = $width * $length * $depth * 5;
@@ -107,8 +134,9 @@ $weight = $width * $length * $depth * 5;
 ?> Initially, the `$weight` variable will contain the weight formula result
 
 ### Quantity calculation using PHP
-The quantity calculation is also very similar to [the price calculation](16-php-calculation.md?id=price-calculation-using-php).  
-The only difference is that the variable that you need to assign is called `$qty`.  
+The quantity calculation is also very similar to [the price calculation](16-php-calculation.md?id=price-calculation-using-php), but here's the two differences:  
+- The variable that you need to assign is called `$qty`
+- The file names are `quantity.php` and `quantityX.php` to target a product with ID=**X**  
 Here are some examples:
 ```php
 // Retract from the stock by meter squared instead of units
