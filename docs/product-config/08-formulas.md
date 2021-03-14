@@ -54,3 +54,62 @@ You can configure this formula:
 
 If you'd like to retract by meter squared for example
 <code class="formula">**[width]** * **[length]**</code>
+
+### Field values for each type
+
+- **Numeric Input**  
+  The value is the html field value
+  <code class="formula">**[width]**</code>
+- **Slider**  
+  The value is the current slider value
+  <code class="formula">**[slider]**</code>
+- **Dropdown**  
+  The value is the selected option value
+  <code class="formula">**[slider]**</code>
+- **Radio buttons**  
+  The value is the selected option value
+  <code class="formula">**[radio]**</code>
+- **Image list**  
+  The value is the selected option value
+  <code class="formula">**[list]**</code>
+- **Checkbox**  
+  The value is 1 if checked, 0 otherwise
+  <code class="formula">**[checkbox]**</code>
+- **Text**  
+  The value is the html field value. When using this field inside the formula, always surround it with quotes
+  <code class="formula">"**[text]**"</code>
+- **Text Area**  
+  The value is the html field value. When using this field inside the formula, always surround it with quotes
+  <code class="formula">"**[textarea]**"</code>
+- **Date**  
+  The value is the html field value. When using this field inside the formula, always surround it with quotes
+  <code class="formula">"**[date]**"</code>
+- **Image**  
+  The value is the uploaded image name. You can check if there is an image that was uploaded by using the `CHECK` function 
+  ```xls
+  CHECK([image]) // will return 1 if there is an image, 0 otherwise
+  ```
+- **File**  
+  The value is the uploaded file name. You can check if there is an file that was uploaded by using the `CHECK` function
+  ```xls
+  CHECK([file]) // will return 1 if there is an image, 0 otherwise
+  ```
+- **Fixed Value**  
+  The value is the initial value
+  <code class="formula">**[fixed]**</code>
+- **Price**  
+  The value is the initial value
+  <code class="formula">**[unit_price]**</code>
+- **Dynamic Variable**  
+  The value is the initial value
+  <code class="formula">**[dynamic]**</code>
+- **Feature**  
+  The value is the feature value for the current language
+  <code class="formula">**[feature]**</code>
+- **Divider**  
+  Cannot be used in the formula
+- **Color picker**  
+  The value is the html field value
+  <code class="formula">**[picker]**</code>
+- **Error message**  
+  Can only be used in [conditions](product-config/09-conditions.md)
