@@ -225,3 +225,48 @@ The data is have this shape
   weight_formatted: "0 kg"
 }
 ```
+
+### Detecting any change on fields
+You can subscribe to the fields store to detect any change on the fields.  
+The result will be an object containing each field
+Example code
+```js
+dp_fields.subscribe(function (fields) {
+    console.log(fields);
+});
+```
+
+The fields variable will have this shape
+```js
+{
+  width: {
+    dir: null
+    ext: ".jpg"
+    field: {
+      // information about the field, similar to the value returned by getField
+    }
+    force_id: false
+    id: null
+    id_field: 0
+    id_input: 0
+    id_shop_list: []
+    image_url: null
+    label: null
+    name: "changed"
+    options: ""
+    position: null
+    secondary_value: "0"
+    selected_options: ""
+    thumb_suffix: "-thumb.jpg"
+    thumb_url: null
+    type: 4
+    value: "width"
+    value_formatted: "width"
+    visible: 0
+  },
+  height: { 
+    // same shape as the width field 
+  },
+  // ...
+}
+```
