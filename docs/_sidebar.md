@@ -14,3 +14,4 @@
   - [Groups](product-config/14-groups.md)
 - [Formula functions](15-formula-functions.md)
 - [PHP Calculation](16-php-calculation.md)
+- [Custom scripts](17-custom-scripts.md)
