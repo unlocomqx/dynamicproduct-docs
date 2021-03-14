@@ -31,6 +31,8 @@ using a custom CSS code
 }
 ```
 
+The next step is to [configure the groups for any product](product-config/14-groups.md) of your choice
+
 The groups will be displayed like this in the product page
 
 <img srcset="./images/groups-preview.jpg 2x" class="border">
