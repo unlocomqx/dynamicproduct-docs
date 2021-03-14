@@ -9,7 +9,7 @@ Start by adding a new field then you can change its properties directly in the l
 <img srcset="./images/field-example.jpg 2x" class="padding border">
 
 ---
-### Name
+## Name
 The field name is only used in the backoffice and it's used to reference the field in the formulas.  
 This name should be lower case and should only contain alphanumerical characters in addition to the underscore.  
 Here are some examples:
@@ -20,15 +20,15 @@ Here are some examples:
 - option2
 
 ---
-### Label
+## Label
 This label will be displayed to the customers, it can be translated to all available languages
 
 ---
-### Type
+## Type
 The module supports many field types, here's the full list 
 
 ---
-#### Numeric Input
+### Numeric Input
 Displays a numeric field
 
 <img srcset="./images/fields/numeric.jpg 2x" class="padding border">
@@ -40,7 +40,7 @@ You can access more settings by clicking the settings icon
 When both _min_ and _max_ are set to 0, the module will not validate them.
 
 ---
-#### Slider
+### Slider
 Displays a slider (from the jQueryUI library)
 
 <img srcset="./images/fields/slider.jpg 2x" class="padding border">
@@ -50,7 +50,7 @@ The slider settings show these options
 <img srcset="./images/fields/slider-settings.jpg 2x" class="border">
 
 ---
-#### Dropdown
+### Dropdown
 
 Displays a dropdown list (a HTML select)
 
@@ -72,7 +72,7 @@ The module will then display the corresponding image or color when an image is s
 <img srcset="./images/fields/dropdown-image.jpg 2x" class="padding border">
 
 ---
-#### Radio buttons
+### Radio buttons
 
 Display radio buttons
 
@@ -83,7 +83,7 @@ You can add radio option in the field settings
 <img srcset="./images/fields/radio-settings.jpg 2x" class="border">
 
 ---
-#### Image list
+### Image list
 
 Displays a list of images or colors
 
@@ -101,7 +101,7 @@ You can also display the label of each option by enabling the "Display label" op
 You can also change the height of the thumbnails in pixels
 
 ---
-#### Checkbox
+### Checkbox
 
 Display a checkbox
 
@@ -114,7 +114,7 @@ You can configure the checkbox in the settings popup
 The value of the checkbox if either 0 or 1, so you can use its value like an on/off switch to add a conditional cost.
 
 ---
-#### Text
+### Text
 
 Displays a text field
 
@@ -127,7 +127,7 @@ You can configure the text field in the field settings
 The text length will not be validated if both _min_ and _max_ are set to 0
 
 ---
-#### Text Area
+### Text Area
 
 Displays a text area
 
@@ -140,7 +140,7 @@ You can find more options in the field settings popup
 The text length will not be validated if both _min_ and _max_ are set to 0
 
 ---
-#### Date
+### Date
 
 Display a date field
 
@@ -150,7 +150,7 @@ More settings are available in the field settings popup
 
 <img srcset="./images/fields/date-settings.jpg 2x" class="padding border">
 
-##### Initial value
+#### Initial value
 The possible values for the initial value are:
 - empty
 - 0 (will set the date to the current date)
@@ -158,7 +158,7 @@ The possible values for the initial value are:
 For example, you can set the initial date to +7 to set it to one week in the future
 
 
-##### Min / Max date
+#### Min / Max date
 You can either set the min/max value to +dd or -dd or set them to a specific date following the format dd/mm/yyyy
 Examples:
 - Min date: -10 (Minimum of 10 days before the current date)
@@ -166,7 +166,7 @@ Examples:
 - Min date: 15/05/2021
 
 ---
-#### Image
+### Image
 
 Displays an image upload field
 
@@ -183,7 +183,7 @@ When the user uploads an image, a preview will be displayed like this
 <img srcset="./images/fields/image-preview.jpg 2x" class="padding border">
 
 ---
-#### File
+### File
 
 Displays a file upload field
 
@@ -200,7 +200,7 @@ svg,png,zip
 ````
 
 ---
-#### Fixed Value
+### Fixed Value
 
 This field can be used if you'd like to declare a fixed value that is not supposed to change.  
 
@@ -210,7 +210,7 @@ For example, if you'd like to store a convertion ratio between two units.
 This field can be displayed to customers but it's not necessary in most cases.
 
 ---
-#### Price
+### Price
 
 You can use this field to store a price.  
 When this field is displayed to the customer, its value will be formatted using the current currency.
@@ -218,7 +218,7 @@ When this field is displayed to the customer, its value will be formatted using 
 <img srcset="./images/fields/price.jpg 2x" class="padding border">
 
 ---
-#### Dynamic Variable
+### Dynamic Variable
 
 You can use this field for any variable that is going to change either using the intervals or the grid 
 or any other method such as a [PHP calculation file](16-php-calculation.md)  
@@ -229,7 +229,7 @@ If you choose to display it, then it will be displayed like this
 <img srcset="./images/fields/dynamic.jpg 2x" class="padding border">
 
 ---
-#### Feature
+### Feature
 
 This field can display any value, it's similar to product features displayed by PrestaShop
 
@@ -240,14 +240,14 @@ You can enter the feature value in the field settings. This value can be transla
 <img srcset="./images/fields/feature-settings.jpg 2x" class="border">
 
 ---
-#### Divider
+### Divider
 
 Display a line separating fields
 
 <img srcset="./images/fields/divider.jpg 2x" class="padding border">
 
 ---
-#### Color picker
+### Color picker
 
 Displays a color picker field
 
@@ -258,7 +258,7 @@ You can configure the initial color and the description in the field settings.
 <img srcset="./images/fields/picker-settings.jpg 2x" class="padding border">
 
 ---
-#### HTML
+### HTML
 
 Allows you to display any html content
 
@@ -271,7 +271,7 @@ You can configure the content in the field settings
 !> For security purposes, only paste html from trusted sources
 
 ---
-#### Error message
+### Error message
 
 This field allows you to implement a custom validation logic for your fields
 
@@ -284,12 +284,12 @@ You can control the visibility of this field using the conditions feature.
 When an _Error message_ field is displayed, the module will not allow adding to cart and will scroll to the first error that is displayed
 
 ---
-### Value
+## Value
 
 This is the default and initial value of the field
 
 ---
-### Unit
+## Unit
 
 This is the field unit, it will displayed in the product page like this
 
@@ -298,10 +298,10 @@ This is the field unit, it will displayed in the product page like this
 You can configure the unitd in the main configuration page of the module.
 
 ---
-### Options
+## Options
 Using this button, you can access the module settings
 
-### Image
+## Image
 You can assign an image to any field of your choice  
 Click the icon to upload an image.
 
@@ -311,7 +311,7 @@ The image will be displayed in the field tooltip like this
 
 <img srcset="./images/fields/tooltip-image.jpg 2x" class="border">
 
-### Actions
+## Actions
 
 You can hide the field by clicking on the visibility icon
 
@@ -319,7 +319,7 @@ You can hide the field by clicking on the visibility icon
 
 You can also delete the field or duplicate it
 
-### Reordering the field
+## Reordering the field
 
 Using the sort handle, you can reorder the fields by dragging the desired field and re-positioning it.
 
