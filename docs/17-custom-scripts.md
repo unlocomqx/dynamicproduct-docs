@@ -270,3 +270,28 @@ The fields variable will have this shape
   // ...
 }
 ```
+
+### Validating the fields
+If you need to validate the fields programmatically, you can use the `validateFields` function.
+
+Example code:
+```js
+var isValid = validateFields();
+// isValid will be either true or false based on the validity of the fields
+// The module will highlight errors and will scroll to the first visible error
+```
+
+### Saving the customization
+If you need to save the customization programmatically, then you can use the `dpSaveCustomization`
+
+Example code
+```ts
+// Signature
+dpSaveCustomization (add_to_cart: boolean): Promise<any>;
+```
+Usage
+```js
+dpSaveCustomization(true).then(function(response){
+  // response is either true or false based on the success of the operation
+});
+```
