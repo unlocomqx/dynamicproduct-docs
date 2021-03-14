@@ -7,7 +7,7 @@ In the main configuration page, you can configure the units that the module can 
 
 <img srcset="./images/units.jpg 2x">
 
-Each unit has a name and a symbol
+Each unit has a name and a symbol (the symbol is optional)
 
 <img srcset="./images/unit-edit.jpg 2x">
 
