@@ -71,3 +71,157 @@ export interface IFieldSettings {
   display_in_popup: number;
 }
 ```
+
+### Get a field properties
+You can use the `getField` function to get the properties of a field.
+```js
+getField(field_name);
+var props = getField("width");
+```
+The value of `props` will have this shape
+```js
+{
+  active: 1
+  common: 0
+  description: ""
+  dir: "images/field"
+  ext: ".jpg"
+  favorite: 0
+  force_id: false
+  id: 66
+  id_group: "0"
+  id_product: 11
+  id_unit: 0
+  image_url: null
+  init: 0
+  label: "Width"
+  linked: "0"
+  name: "width"
+  options: []
+  position: "2"
+  settings: {
+    color: null
+    dir: null
+    display_in_popup: null
+    display_secondary_value_price: null
+    display_value_price: null
+    ext: ".jpg"
+    extensions: null
+    extra: null
+    force_id: false
+    hide_when_empty: 1
+    id: null
+    id_field: 66
+    id_unit: null
+    init: null
+    max: null
+    max_date: null
+    max_size: null
+    min: null
+    min_date: null
+    min_height: null
+    min_width: null
+    multiselect: null
+    position: null
+    price_unit: null
+    required: null
+    show_in_summary: 0
+    step: 1
+    thumb_suffix: "-thumb.jpg"
+  }
+  thumb_suffix: "-thumb.jpg"
+  thumb_url: null
+  type: 1
+  unit: {
+    dir: null
+    displayed: 1
+    ext: ".jpg"
+    force_id: false
+    id: null
+    name: null
+    position: null
+    symbol: null
+    thumb_suffix: "-thumb.jpg"
+  }
+  value: ""
+}
+```
+
+### Detecting a calculation result
+You can subscribe to the module stores in ordre to detect the calculation results.  
+The module uses [`Svelte stores`](https://svelte.dev/docs#svelte_store) under the hood.
+
+Code example:
+```js
+dp_calc.subscribe(function(data) {
+  console.log(data);
+});
+```
+
+The data is have this shape
+```js
+{
+  customization_prices: {
+    price_ht: 10
+    price_ht_nr: 10
+    price_ttc: 12
+    price_ttc_nr: 12
+  }
+  debug_messages: null
+  final_prices: {
+    price_ht: 20
+    price_ht_nr: 20
+    price_ttc: 24
+    price_ttc_nr: 24
+  }
+  formatted_prices: {
+    price_ht: "€20.00"
+    price_ht_nr: "€20.00"
+    price_ttc: "€24.00"
+    price_ttc_nr: "€24.00"
+  }
+  formatted_unit_prices: {
+    price_ht: "€20.00"
+    price_ht_nr: "€20.00"
+    price_ttc: "€24.00"
+    price_ttc_nr: "€24.00"
+  }
+  input_fields: {
+    width: {
+      dir: null
+      ext: ".jpg"
+      field: {
+        // information about the field, similar to the value returned by getField
+      }
+      force_id: false
+      id: null
+      id_field: 66
+      id_input: 0
+      id_shop_list: []
+      image_url: null
+      label: "Width"
+      name: "width"
+      options: "[]"
+      position: null
+      secondary_value: "0"
+      selected_options: []
+      thumb_suffix: "-thumb.jpg"
+      thumb_url: null
+      type: 1
+      value: 0
+      value_formatted: 0
+      visible: 1
+    }
+  }
+  met_conditions: []
+  oos: false
+  success: 1
+  unit_prices: {price_ht: 20, price_ht_nr: 20, price_ttc: 24, price_ttc_nr: 24}
+  use_tax: true
+  visibility: {
+    groups: []
+  }
+  weight: 0
+  weight_formatted: "0 kg"
+}
+```
