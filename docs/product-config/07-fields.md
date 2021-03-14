@@ -220,7 +220,8 @@ When this field is displayed to the customer, its value will be formatted using 
 ---
 ##### Dynamic Variable
 
-You can use this field for any variable that is going to change either using the intervals or the grid or any other method.  
+You can use this field for any variable that is going to change either using the intervals or the grid 
+or any other method such as a [PHP calculation file](16-php-calculation.md)  
 In most case, you will not need to display this field to customers, so you can hide it.
 
 If you choose to display it, then it will be displayed like this  
