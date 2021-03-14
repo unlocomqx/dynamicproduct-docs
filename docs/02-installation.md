@@ -10,7 +10,7 @@ The module will install the following overrides automatically:
 - **Carrier** override  
   Path: **/override/classes/Carrier.php**  
   Methods: 
-  - **getAvailableCarrierList**: used to filter carriers based on the product size
+  - **getAvailableCarrierList**: used to [filter carriers](18-carrier-filtering.md) based on the product size
   
 - **Cart** override  
   Path: **/override/classes/Cart.php**  
@@ -20,4 +20,4 @@ The module will install the following overrides automatically:
 - **Product** override  
   Path: **/override/classes/Product.php**  
   Methods: 
-  - **getProductProperties**: used to alter the product displayed price in category page when a display price is configured
+  - **getProductProperties**: used to alter the product [displayed price](product-config/06-settings.md?id=displayed-price) in category page when a display price is configured
