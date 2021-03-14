@@ -124,3 +124,5 @@ Then in the formula, you can insert this function by clicking the CSV file
 In this case, we get a price based on the width and height values
 
 <img srcset="./images/grid-function.jpg 2x">
+
+This method allows you to use a single CSV file for multiple products
