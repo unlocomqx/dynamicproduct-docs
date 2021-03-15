@@ -6,6 +6,10 @@
   padding: 10px;
 }
 
+.medium-zoom-image--opened.padding {
+  background-color: #fff;
+}
+
 code.formula {
   display: block;
   color: unset;
