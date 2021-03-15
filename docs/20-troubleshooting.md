@@ -18,3 +18,23 @@ The module will then restore the hooks and show this confirmation
 <img srcset="./images/hooks-restored.jpg 2x">
 
 You can also restore the module hooks in the `Design` > `Positions` page.
+
+## The customization is not formatted correctly
+By default, PrestaShop does not display a customization that contains HTML content, so instead of the customization summary,
+the HTML code will be displayed.  
+
+<img srcset="./images/customization-html.jpg 2x">
+
+To fix this, apply the template fixes in the troubleshoot page
+
+<img srcset="./images/template-fix.jpg 2x">
+
+The module will display this confirmation if the fix was applied successfully
+
+<img srcset="./images/template-fix-applied.jpg 2x">
+
+?> Clear the PrestaShop cache after applying the template fix
+
+The customization will be displayed like this
+
+<img srcset="./images/customization-formatted.jpg 2x">
