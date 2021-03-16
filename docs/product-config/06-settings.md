@@ -101,6 +101,7 @@ You can also import / export the configuration as a file or copy / paste it from
 ## Advanced configuration
 
 In the advanced configuration, you can change the calculation order if needed.  
+You can access the advanced configuration from the `Settings` tab and you can find it in the bottom of this tab.  
 This is the default calculation order that the module follows:
 
 1. [Intervals](product-config/12-intervals.md)
