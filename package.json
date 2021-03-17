@@ -1,0 +1,22 @@
+{
+  "name": "dynamicproduct-docs",
+  "version": "1.0.0",
+  "description": "https://unlocomqx.github.io/dynamicproduct-docs/",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "docsify serve docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unlocomqx/dynamicproduct-docs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unlocomqx/dynamicproduct-docs/issues"
+  },
+  "homepage": "https://github.com/unlocomqx/dynamicproduct-docs#readme"
+}
