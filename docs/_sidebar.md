@@ -18,3 +18,4 @@
 - [Carrier filtering](18-carrier-filtering.md)
 - [Dynamic content](19-dynamic-content.md)
 - [Troubleshooting](20-troubleshooting.md)
+- [Debug mode](21-debug-mode.md)
